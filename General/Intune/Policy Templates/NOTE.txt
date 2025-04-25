@@ -1,0 +1,1 @@
+See https://github.com/Micke-K/IntuneManagement for usage of Templates saved to this folder
