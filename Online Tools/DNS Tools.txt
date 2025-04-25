@@ -1,0 +1,5 @@
+DNS Propogation Checks - https://www.whatsmydns.net/
+General DNS Checks - https://mxtoolbox.com/
+DNSSEC Checks - https://dnsviz.net/
+				- https://dnssec-analyzer.verisignlabs.com/
+MTA-STS Checks - https://www.mailhardener.com/tools/mta-sts-validator
