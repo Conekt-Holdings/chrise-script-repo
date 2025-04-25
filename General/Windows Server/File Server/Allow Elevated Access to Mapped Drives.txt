@@ -1,0 +1,7 @@
+I dug it out of some docs I wrote while trying desperately to get 12 year old CAD software running on Win 10, just for you.
+
+Under
+
+    HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System
+
+create a DWORD "EnableLinkedConnections" with the value of "1", and reboot. Allows escalated apps to access mapped drives without having to "net use" as administrator.

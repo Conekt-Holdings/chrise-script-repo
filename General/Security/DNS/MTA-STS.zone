@@ -1,0 +1,2 @@
+_mta-sts IN TXT "v=STSv1; id=YYYYMMDD"
+_smtp._tls IN TXT "v=TLSRPTv1; rua=mailto:mail@domain.co.za"
