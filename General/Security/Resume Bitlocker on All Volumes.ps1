@@ -1,1 +1,0 @@
-Get-BitLockerVolume | Resume-BitLocker
