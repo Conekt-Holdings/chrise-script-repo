@@ -1,0 +1,9 @@
+DeviceTvmSoftwareVulnerabilities
+| project  DeviceName, SoftwareName, CveId, SoftwareVersion, VulnerabilitySeverityLevel 
+| join (DeviceTvmSoftwareVulnerabilitiesKB
+| project AffectedSoftware, VulnerabilityDescription , CveId , CvssScore , IsExploitAvailable 
+)
+on CveId 
+| project DeviceName, CveId , SoftwareName , SoftwareVersion , VulnerabilityDescription , VulnerabilitySeverityLevel, IsExploitAvailable , CvssScore 
+| distinct DeviceName, SoftwareName , SoftwareVersion, CveId, VulnerabilityDescription , VulnerabilitySeverityLevel, IsExploitAvailable  
+| sort by SoftwareName asc , SoftwareVersion
