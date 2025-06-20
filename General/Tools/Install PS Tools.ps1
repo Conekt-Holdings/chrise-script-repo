@@ -19,6 +19,8 @@ install-module Microsoft.Online.SharePoint.PowerShell -force
 install-module Microsoft.graph -force
 Install-Module PnP.PowerShell -force
 Install-Module AzureAD -force
+Install-Module -Name ScubaGear
+Initialize-SCuBA
 
 #For Good Measure - Update all Installed Modules
 Update-Module -force
@@ -41,3 +43,9 @@ winget install --id=Google.Chrome  -e
 
 #Install Visual Studio Community
 winget install --id=Microsoft.VisualStudio.2022.Community  -e
+
+#Install Python 3.13
+winget install Python.Python.3.13
+
+#Install Strawberry Perl
+winget install --id=StrawberryPerl.StrawberryPerl -e
