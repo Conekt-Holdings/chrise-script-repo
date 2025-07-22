@@ -2,7 +2,6 @@ async function handleRequest(request) {
   const init = {
     headers: {
       'content-type': 'text/plain; charset=UTF-8',
-      'X-Clacks-Overhead': 'GNU Terry Pratchett',
     },
   }
   return new Response(stsHTML, init)
