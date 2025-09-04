@@ -1,0 +1,10 @@
+#This can be used in cases where SSL Deep Inspection is not being used
+
+config webfilter profile 
+  edit <> #enter policy name here
+    set https-replacemsg disable 
+end 
+
+config web-proxy explicit
+  set https-replacement-message disable
+end
