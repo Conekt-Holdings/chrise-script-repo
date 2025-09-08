@@ -5,6 +5,11 @@ config webfilter profile
     set https-replacemsg disable 
 end 
 
+config application list 
+  edit <> #enter policy name here
+    set app-replacemsg disable 
+end
+
 config web-proxy explicit
   set https-replacement-message disable
 end
