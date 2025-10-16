@@ -1,0 +1,4 @@
+config system global
+    set admin-telnet enable
+    set admin-telnet-port 443
+end
