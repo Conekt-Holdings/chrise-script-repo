@@ -49,3 +49,6 @@ winget install Python.Python.3.13
 
 #Install Strawberry Perl
 winget install --id=StrawberryPerl.StrawberryPerl -e
+
+#Install FortiClient VPN
+winget install --id=Fortinet.FortiClientVPN -e
