@@ -39,10 +39,56 @@ Else {
 	.\winget.exe install -e --id Fortinet.FortiClientVPN --accept-package-agreements --accept-source-agreements
 }
 
+#Install Office
+if (Resolve-Path "C:\Program Files\Microsoft Office\root\Office16\EXCEL.exe") {
+    Write-Host Office is Installed
+}
+Else {
+    Write-Host Office is Not Installed, Proceeding with Installation
+	.\winget.exe install -e --id Microsoft.Office --accept-package-agreements --accept-source-agreements
+}
 
-.\winget.exe install -e --id AcroSoftware.CutePDFWriter --accept-package-agreements --accept-source-agreements
-.\winget.exe install -e --id Google.EarthPro --accept-package-agreements --accept-source-agreements
-.\winget.exe install -e --id Microsoft.Office --accept-package-agreements --accept-source-agreements
-.\winget.exe install -e --id Avanquestpdfforge.PDFCreator-Free --accept-package-agreements --accept-source-agreements
-.\winget.exe install --id=RARLab.WinRAR -e --accept-package-agreements --accept-source-agreements
-.\winget.exe install -e --id VideoLAN.VLC --accept-package-agreements --accept-source-agreements
+#Install WinRAR
+if (Resolve-Path "C:\Program Files\WinRAR\winrar.exe") {
+    Write-Host WinRAR is Installed
+}
+Else {
+    Write-Host WinRAR is Not Installed, Proceeding with Installation
+	.\winget.exe install --id=RARLab.WinRAR -e --accept-package-agreements --accept-source-agreements
+}
+
+#Install Google Earth
+if (Resolve-Path "C:\Program Files\Google\Google Earth Pro\client\googleearth.exe") {
+    Write-Host Google Earth is Installed
+}
+Else {
+    Write-Host Google Earth is Not Installed, Proceeding with Installation
+	.\winget.exe install -e --id Google.EarthPro --accept-package-agreements --accept-source-agreements
+}
+
+#Install VLC
+if (Resolve-Path "C:\Program Files\VideoLAN\VLC\vlc.exe") {
+    Write-Host VLC is Installed
+}
+Else {
+    Write-Host VLC is Not Installed, Proceeding with Installation
+	.\winget.exe install -e --id VideoLAN.VLC --accept-package-agreements --accept-source-agreements
+}
+
+#Install Cute PDF Writer
+if (Resolve-Path "C:\Program Files (x86)\CutePDF Writer\CutePDFWriter.exe") {
+    Write-Host Cute PDF Writer
+}
+Else {
+    Write-Host Cute PDF Writer is Not Installed, Proceeding with Installation
+	.\winget.exe install -e --id AcroSoftware.CutePDFWriter --accept-package-agreements --accept-source-agreements
+}
+
+#Install PDF Creator
+if (Resolve-Path "C:\Program Files\PDFCreator\PDFCreator.exe") {
+    Write-Host PDF Creator is Installed
+}
+Else {
+    Write-Host PDF Creator is Not Installed, Proceeding with Installation
+	.\winget.exe install -e --id Avanquestpdfforge.PDFCreator-Free --accept-package-agreements --accept-source-agreements
+}
